@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>textured_blue - contact us</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a>Order - Ticket<span class="logo_colour"> Wisata Yogyakarta</span></a></h1>
+          <h2>Nyamannya Berlibur di Yogya.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li><a href="home.html">home</a></li>
+          <li><a href="daftar.html">Daftar Harga Ticket</a></li>
+          <li class="selected"><a href="pesan.html">Pesan Sekarang!</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h3>Profile</h3>
+        <h5>Oktober, 2022</h5>
+        <p>
+          Aditya Rimandi Putra 
+          <br>41155050210042
+          <br>Teknik Informatika B
+          <br>PWD
+      </p>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>Form Pemesanan Tiket</h1>
+        <form action="#" method="post">
+          <div class="form_settings">
+            <p><span>Nama</span><input class="contact" type="text" name="your_name" value="" /></p>
+            <p><span>Email</span><input class="contact" type="text" name="your_email" value=""></p>
+            <p><span>Daftar Tiket</span>
+              <select id="id" name="name">
+                <option value="0">Pilih Tempat Wisata</option>
+                <option value="1">Merapi Park Jogja</option>
+                <option value="2">The Lost World Castle</option>
+                <option value="3">Stonehage Cangkringan</option>
+                <option value="4">Heha Sky View</option>
+              </select>
+            </p>
+            <p><span>Jumlah Tiket</span><input class="contact" type="text" name="your_name" value="" /></p>
+            <p style="padding-top: 15px"><span>&nbsp;</span>
+              <input class="submit" type="button" onclick="pesan()" name="contact_submitted" value="Pesan" /> 
+            </p>
+          </div>
+        </form></div>
+    </div>
+    <div id="footer">
+      <p><a href="home.html">Home</a> | <a href="daftar.html">Daftar Harga Tiket</a> | <a href="pesan.html">Pesan</a></p>
+    </div>
+  </div>
+  <script>
+    function pesan(){
+      alert("Detail Pemabayaran telah dikirim ke email, terima kasih telah memesan.");
+    }
+  </script>
+</body>
+</html>
